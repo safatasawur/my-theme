@@ -3,7 +3,7 @@
 {% endcomment %}
 
 <div>
-  <h2>{{ section.settings.heading }}</h2>
+  <h2 style="text_align : {{ section.settings.title_alignmnet }}">{{ section.settings.heading }}</h2>
 </div>
 
 {% schema %}
@@ -17,6 +17,23 @@
       "id": "heading",
       "label": "Heading Text",
       "default": "Welcome!"
+    },
+    {
+        "type": "select",
+        "id": "title_alignmnet",
+        "label": "Title alignment",
+        "options": [
+        {"label": "Left",
+            "value": "left"
+        },
+        {"label": "right",
+         "value": "right"
+        },
+        {"label": "center",
+         "value": "center"
+        }
+        ],
+        "default" : "left"
     }
   ],
   "presets": [
