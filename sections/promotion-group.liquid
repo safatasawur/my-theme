@@ -8,8 +8,8 @@
     {% for blocks in section.blocks %}
     {% if blocks.type==promotion %}
         <div style="display: flex; flex-direction: row; gap: 18px">
-            <h3>{{ blocks.settings.title }}</h3>
-        {{ blocks.settings.image | image_url: width: 600 | image_tag  }}
+            <h3>{{ block.settings.title }}</h3>
+        {{ block.settings.image | image_url: width: 600 | image_tag  }}
         </div>
         {%endif%}
     {% endfor %}
