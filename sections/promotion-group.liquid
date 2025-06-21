@@ -4,10 +4,10 @@
 
 
   <h2 style="text-align : {{ section.settings.title_alignment }}">{{ section.settings.heading }}</h2>
- <div >
+ <div style=" display:flex; align-items: center; gap: 20 px;">
     {% for block in section.blocks %}
     {% if block.type == 'promotion' %}
-        <div >
+        <div style=" display: flex; flex-direction: row; gap: 18px;">
             <h3>{{ block.settings.title }}</h3>
         {{ block.settings.image | image_url: width: 600 | image_tag  }}
         </div>
