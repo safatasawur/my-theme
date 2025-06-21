@@ -1,1 +1,0 @@
-alert("this alert is by js")
