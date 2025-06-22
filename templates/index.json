@@ -222,26 +222,6 @@
     },
     "promotion_group": {
       "type": "promotion-group",
-      "blocks": {
-        "promotion_gAkmLq": {
-          "type": "promotion",
-          "settings": {
-            "title": "promo 1",
-            "image": "shopify://shop_images/milkshake.png"
-          }
-        },
-        "promotion_6xBETP": {
-          "type": "promotion",
-          "settings": {
-            "title": "promo 2",
-            "image": "shopify://shop_images/fugecake.png"
-          }
-        }
-      },
-      "block_order": [
-        "promotion_gAkmLq",
-        "promotion_6xBETP"
-      ],
       "settings": {
         "heading": "Welcome!",
         "title_alignment": "center"
