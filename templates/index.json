@@ -227,8 +227,13 @@
         "title_alignment": "center"
       }
     },
-     
-
+    "sections_tutorial_8fG4gg": {
+      "type": "sections-tutorial",
+      "name": "section tutorial",
+      "settings": {
+        "text-setting": "My first text is changed"
+      }
+    }
   },
   "order": [
     "image_banner",
@@ -237,6 +242,7 @@
     "collage",
     "video",
     "multicolumn",
-    "promotion_group"
+    "promotion_group",
+    "sections_tutorial_8fG4gg"
   ]
 }
