@@ -1,13 +1,26 @@
+
 <p>hello world</p>
+<h2>Text setting</h2>
+<p>{{ section.settings.text-setting }}</p>
 {% schema %}
  {"name": "section tutorial",
 "tag": "section",
-"settings": [],
+"settings": [
+    {
+        "type": "text",
+        "id": "text-setting",
+        "label": "Text",
+        "default" : "My first text",
+        "info": "just some heloer text"
+    }
+],
 "blocks": [],
 "presets": [
     {
         "name": "section tutorial",
-        "settings": {}
+        "settings": {
+            
+        }
 }
 ]
 }
