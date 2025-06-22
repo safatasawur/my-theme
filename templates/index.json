@@ -231,9 +231,7 @@
     "custom_hero": {
       "type": "custom-hero"
     },
-  "order": [
-    "custom_hero"
-  ]
+  "order": ["main"]
 }
   },
   "order": [
@@ -243,6 +241,7 @@
     "collage",
     "video",
     "multicolumn",
-    "promotion_group"
+    "promotion_group",
+    "custom_hero"
   ]
 }
