@@ -2,6 +2,11 @@
 <p>hello world</p>
 <h2>Text setting</h2>
 <p>{{ section.settings.text-setting }}</p>
+<h2>Text Area setting</h2>
+<p>{{ section.settings.textarea-setting | newline_to_br }}</p>
+<h2>Rich Text setting</h2>
+<div>{{ section.settings.richtext-setting }}</div>
+
 {% schema %}
  {"name": "section tutorial",
 "tag": "section",
@@ -12,6 +17,16 @@
         "label": "Text",
         "default" : "My first text",
         "info": "just some heloer text"
+    },
+    {
+        "type": "textarea",
+        "id": "textarea-setting",
+        "label": "Text area",
+    },
+     {
+        "type": "richtext",
+        "id": "richtext-setting",
+        "label": "Rich text"
     }
 ],
 "blocks": [],
