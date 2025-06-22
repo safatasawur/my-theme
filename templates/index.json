@@ -227,9 +227,16 @@
         "title_alignment": "center"
       }
     },
-     "custom_hero":{
-        "type": "custom-hero"
-    }
+     "custom_hero": {
+  "type": "custom-hero",
+  "settings": {
+    "heading": "My Custom Hero",
+    "paragraph": "This is a custom hero paragraph.",
+    "image": "",
+    "alignment": "center"
+  }
+}
+
   },
   "order": [
     "image_banner",

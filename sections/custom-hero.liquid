@@ -1,12 +1,12 @@
-<div style="text-align: {{ section.settings.alignment }}; padding: 20px;">
-  <h2>{{ section.settings.heading }}</h2>
+
+  <h2 style="text-align: {{ section.settings.alignment }}">{{ section.settings.heading }}</h2>
+<div>
   <p>{{ section.settings.paragraph }}</p>
 
   {% if section.settings.image != blank %}
- {{ section.settings.image | image_url: width: 800 | image_tag: alt: 'Hero image' }}
+    {{ section.settings.image | image_url: width: 800 | image_tag: alt: 'Hero image' }}
   {% endif %}
 </div>
-{% schema %}
 {
     "name":"Custom hero",
     "tag": "section",
