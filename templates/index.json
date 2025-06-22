@@ -226,7 +226,15 @@
         "heading": "Welcome!",
         "title_alignment": "center"
       }
-    }
+    },
+    "sections": {
+    "custom_hero": {
+      "type": "custom-hero"
+    },
+  "order": [
+    "custom_hero"
+  ]
+}
   },
   "order": [
     "image_banner",
