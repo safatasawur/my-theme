@@ -12,6 +12,16 @@
 <div>{{ section.settings.number-setting }}</div>
 <h2>Range</h2>
 <div>{{ section.settings.range-setting-setting }}</div>
+<div>
+    {% if section.settings.product_setting != blank %}
+    <h2>{{ section.settings.product_setting.title }}</h2>
+    {{ section.settings.product_setting.featured_image | image_url: width: 600 | image_tag }}
+    <p>{{ section.settings.product_setting.description }}</p>
+    <p>{{ section.settings.product_setting.price | money }}</p>
+  {% else %}
+    <p>No product selected.</p>
+  {% endif %}
+</div>
 
 {% schema %}
  {"name": "section tutorial",
@@ -48,13 +58,16 @@
     {
         "type": "range",
         "id": "range-setting",
-        "label": "Rich text",
+        "label": "Range",
          "min": 1,
          "max": 100,
         "unit": "px",
         "default":16
-    
-
+    },
+    {
+    "type": "product",
+    "id": "product_setting",
+    "label": "select a product"
     }
 ],
 "blocks": [],
