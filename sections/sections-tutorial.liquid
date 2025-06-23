@@ -6,6 +6,12 @@
 <p>{{ section.settings.textarea-setting | newline_to_br }}</p>
 <h2>Rich Text setting</h2>
 <div>{{ section.settings.richtext-setting }}</div>
+<h2>Inline rich Text setting</h2>
+<div>{{ section.settings.inline-richtext-setting }}</div>
+<h2>number</h2>
+<div>{{ section.settings.number-setting }}</div>
+<h2>Range</h2>
+<div>{{ section.settings.range-setting-setting }}</div>
 
 {% schema %}
  {"name": "section tutorial",
@@ -27,6 +33,28 @@
         "type": "richtext",
         "id": "richtext-setting",
         "label": "Rich text"
+    },
+    {
+        "type": "inline_richtext",
+        "id": "inline-richtext-setting",
+        "label": "Inline rich text"
+    },
+    {
+        "type": "number",
+        "id": "number-setting",
+        "label": "Number",
+        "default": 10
+    },
+    {
+        "type": "range",
+        "id": "range-setting",
+        "label": "Rich text",
+         "min": 1,
+         "max": 100,
+        "unit": "px",
+        "default":16
+    
+
     }
 ],
 "blocks": [],
