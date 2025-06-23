@@ -25,13 +25,13 @@
    <h2>font setting</h2>
    <p>font settings: {{ section.settings.font_setting.family}}</p>
    <style>
-    {{ section.settings.font_setting |font-face : font_display : ;'swap'}}
+    {{ section.settings.font_setting |font_face : font_display: 'swap'}}
       .tutorial * {
         font-family: {{ section.settings.font_setting.family}};
       }
    </style>
    
-}
+
 
 {% schema %}
  {
