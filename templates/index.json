@@ -231,7 +231,12 @@
       "type": "sections-tutorial",
       "name": "section tutorial",
       "settings": {
-        "text-setting": "My first text is changed"
+        "text-setting": "My first text is changed",
+        "textarea-setting": "",
+        "richtext-setting": "",
+        "inline-richtext-setting": "",
+        "number-setting": 10,
+        "range-setting": 22
       }
     }
   },
