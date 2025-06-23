@@ -22,10 +22,22 @@
     <p>No product selected.</p>
   {% endif %}
 </div>
+   <h2>font setting</h2>
+   <p>font settings: {{ section.settings.font_setting.family}}</p>
+   <style>
+    {{ section.settings.font_setting |font-face : font_display : ;'swap'}}
+      .tutorial * {
+        font-family: {{ section.settings.font_setting.family}};
+      }
+   </style>
+   
+}
 
 {% schema %}
- {"name": "section tutorial",
-"tag": "section",
+ {
+    "name": "section tutorial",
+ "tag": "section",
+"class":"tutorial",
 "settings": [
     {
         "type": "text",
@@ -68,6 +80,11 @@
     "type": "product",
     "id": "product_setting",
     "label": "select a product"
+    },
+    {
+    "type": "font_picker",
+    "id": "font_setting",
+    "label": "select a font"
     }
 ],
 "blocks": [],
